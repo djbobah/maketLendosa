@@ -37,14 +37,14 @@
       <!-- </div> -->
     </header>
     <nav>
-      <div>проекты</div>
-      <div>фото работ</div>
-      <div>акции</div>
-      <div>услуги</div>
-      <div>заказчику</div>
-      <div>контакты</div>
-      <div>избранное</div>
-      <div>поиск</div>
+      <span>проекты </span>
+      <span>фото работ</span>
+      <span>акции</span>
+      <span>услуги</span>
+      <span>заказчику</span>
+      <span>контакты</span>
+      <img src="assets/images/heart.svg" alt="heart" /><span>избранное</span>
+      <img src="assets/images/search.svg" alt="" /><span>поиск</span>
     </nav>
     <main>
       <section>
@@ -54,10 +54,16 @@
           <button>рассчитать стоимость</button>
         </div>
         <div>
-          <div>40 собственных опытных бригад</div>
-          <div>Свое производство строительных материалов</div>
-          <div>Тысячи довольных клиентов с 1998 года</div>
-          <div>Гарантия на все строительные работы по договору</div>
+          <img src="assets/images/helmet.svg" alt="helmet" />
+          <span>40 собственных опытных бригад</span>
+          <img src="assets/images/brush.svg" alt="brash" /><span
+            >Свое производство строительных материалов</span
+          >
+          <img src="assets/images/checkSuccess.svg" alt="" /><span
+            >Тысячи довольных клиентов с 1998 года</span
+          >
+          <img src="assets/images/listNote.svg" alt="list" />
+          <span>Гарантия на все строительные работы по договору</span>
         </div>
       </section>
       <section>
@@ -66,8 +72,15 @@
           <div>
             <div>01.</div>
             <div>Что будем строить?</div>
-            <div>Дом</div>
-            <div>Баня</div>
+            <figure>
+              <img src="assets/images/houseSmall.png" alt="house small">
+              <figcaption>Дом</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/bathhouse.png" alt="bathhouse">
+              <figcaption>Баня</figcaption>
+            </figure>
+            
             <div>
               <div>
                 Нажимайте на вариант ответа и переходите к следующему вопросу
@@ -77,6 +90,7 @@
           </div>
         </div>
         <div>
+          <img src="assets/images/MihailIvanov.png" alt="">
           <h3>Михаил Иванов</h3>
           <div>Ведущий архитектор</div>
           <div>Ответив на вопросы <b>вы получите:</b></div>
@@ -188,6 +202,7 @@
           <div>Смотреть все</div>
         </nav>
         <div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -226,6 +241,7 @@
               </div>
             </div>
           </div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -264,6 +280,7 @@
               </div>
             </div>
           </div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -302,6 +319,7 @@
               </div>
             </div>
           </div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -340,6 +358,7 @@
               </div>
             </div>
           </div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -378,6 +397,7 @@
               </div>
             </div>
           </div>
+          <img src="/assets/images/houseAtaman.png " alt="house Ataman" />
           <div>
             <h3>“Атаман”</h3>
             <div>
@@ -429,7 +449,12 @@
           <div>Этап 6</div>
         </div>
         <div>
-          <div>image</div>
+          <div>
+            <img
+              src="assets/images/projectApproval.png"
+              alt="Согласование проекта"
+            />
+          </div>
           <div>
             <div>
               <div>Время:</div>
@@ -550,25 +575,32 @@
           <div><b>Познакомитесь</b> с технологией строительства</div>
           <div><b>Оцените</b> качество материалов на стройплощадке</div>
           <div><b>Зададите</b> вопросы руководителю строительства</div>
-          <div>
-            <div>Укажите дату:</div>
-            <input type="date" />
-          </div>
-          <div>
-            <div>Введите телефон:</div>
-            <input type="tel" placeholder="+7" value="" />
-          </div>
-          <button>Записаться на экскурсию</button>
-          <div>
-            Нажимая на кнопку, вы соглашаетесь с условиями
-            <b>Политики конфиденциальности</b>
-          </div>
+          <form action="#">
+            <div>
+              <label
+                >Укажите дату: <input type="date" name="dateGuide"
+              /></label>
+            </div>
+
+            <div>
+              <label
+                >Введите телефон:
+                <input type="tel" name="phoneGuide" placeholder="+7" value=""
+              /></label>
+            </div>
+            <button type="submit">Записаться на экскурсию</button>
+            <div>
+              Нажимая на кнопку, вы соглашаетесь с условиями
+              <b>Политики конфиденциальности</b>
+            </div>
+          </form>
         </div>
       </section>
       <section>
         <h2>Скачайте каталог проектов с ценами и планировками</h2>
         <div>
           <div>image</div>
+          <form action="#">
           <div>
             <h4>Скачайте каталог топовых проектов</h4>
             <div>Мы вышлем подборку вам в мессенджер</div>
@@ -584,13 +616,15 @@
               Нажимая на кнопку, вы соглашаетесь с условиями
               <b>Политики конфиденциальности</b>
             </div>
+
           </div>
         </div>
       </section>
       <section>
         <h2>Более 200 отзывов от наших клиентов</h2>
         <div>
-          <h5>Дарья Достоевская</h5>
+          <img src="/assets/images/reviewsOfWoman.png" alt="" />
+          <h5>Дарья Достоевская</h5> <img src="assets/images/google.svg" alt="">
           <div>23 декабря 2022</div>
           <div>
             Рыбатекст используется дизайнерами, проектировщиками и
@@ -600,6 +634,7 @@
           <a href="#">Читать дальше</a>
         </div>
         <div>
+          <img src="/assets/images/reviewsOfMan.png" alt="" />
           <h5>Евгений Маяковский</h5>
           <div>23 декабря 2022</div>
           <div>
@@ -610,6 +645,7 @@
           <a href="#">Читать дальше</a>
         </div>
         <div>
+          <img src="/assets/images/reviewsOfWoman.png" alt="" />
           <h5>Дарья Достоевская</h5>
           <div>23 декабря 2022</div>
           <div>
@@ -621,6 +657,7 @@
         </div>
       </section>
       <section>
+        <img src="assets/images/OlegSoloviev.png" alt="" />
         <h2>Здравствуйте, я Олег Соловьев, директор и основатель компании.</h2>
         <div>
           На рынке строительных услуг мы уже 14 лет. за это время нам удалось
@@ -632,22 +669,25 @@
         <div>
           <div>
             <div>
-              <div>10</div>
-              <div>лет</div>
+              <img src="assets/images/clickPoint.svg" alt="clickPoint">
+              <span>10</span>
+              <span>лет</span>
             </div>
             <div>компания на рынке</div>
           </div>
           <div>
             <div>
-              <div>200</div>
-              <div>+</div>
+              <img src="assets/images/clickPoint.svg" alt="clickPoint">
+              <span>200</span>
+              <span>+</span>
             </div>
             <div>объектов постреоно</div>
           </div>
           <div>
             <div>
-              <div>5</div>
-              <div>лет</div>
+              <img src="assets/images/clickPoint.svg" alt="clickPoint">
+              <span>5</span>
+              <span>лет</span>
             </div>
             <div>гарантия на работы</div>
           </div>
