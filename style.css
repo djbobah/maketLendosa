@@ -4,14 +4,9 @@
   padding: 0;
 }
 
-.top {
+body {
   background-image: url("img/house1.png");
   background-repeat: no-repeat;
-  /* background-position: -40px 0px; */
-  /* background-image
-background-position
-background-size
-background-repeat */
-  background-size: cover;
-  height: 803px;
+  background-position: top;
+  background-size: contain;
 }
