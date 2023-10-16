@@ -47,9 +47,9 @@ body {
 .button_green {
   background-color: #84b73d;
 }
-header .button_green {
-  width: 237px;
-  height: 45px;
+.button_green {
+  width: 240px;
+  height: 30px;
   text-align: center;
   /* line-height: 45px; */
   padding-top: 10px;
@@ -79,6 +79,9 @@ header .button_green {
   height: 19px;
 }
 
+.nav {
+  margin-top: 20px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -94,12 +97,14 @@ nav span {
   /* display: flex; */
   margin: 0 auto;
 }
-.online img {
+.online > img {
   vertical-align: middle;
 }
-.online span {
+.online > span {
   font-size: 10px;
   color: #d2d3d6;
+}
+.phoneCall {
 }
 .phoneCall span {
   font-size: 10px;
@@ -113,6 +118,18 @@ nav span {
   color: #87bf3c;
   text-decoration-style: dashed;
   /* text-decoration: dashed; */
+}
+h1 {
+  font-size: 46px;
+  width: 430px;
+}
+h1 > span {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 42px;
+  color: #2d2d2f;
 }
 /* font-size
 font-weight
