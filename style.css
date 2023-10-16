@@ -37,16 +37,14 @@ body {
 .raiting_label {
   font-size: 20px;
   font-weight: 500;
-  margin-left: -45px;
+  margin-left: -38px;
   margin-right: 35px;
 }
 .raiting_text {
   font-size: 12px;
   width: 150px;
 }
-.button_green {
-  background-color: #84b73d;
-}
+
 .button_green {
   width: 240px;
   height: 30px;
@@ -55,6 +53,7 @@ body {
   padding-top: 10px;
 
   border-radius: 4px;
+  background-color: #84b73d;
 }
 
 .logo {
@@ -120,16 +119,67 @@ nav span {
   /* text-decoration: dashed; */
 }
 h1 {
+  margin-top: 50px;
   font-size: 46px;
   width: 430px;
 }
 h1 > span {
   font-weight: 300;
 }
-
+.baner > p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.baner > button {
+  width: 285px;
+  height: 60px;
+}
+.orange_button {
+  cursor: pointer;
+  color: FBFFFF;
+  background-color: #feaa01;
+  border-radius: 4px;
+}
+.baner .orange_button {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  width: fit-content;
+  padding: 20px 40px;
+}
 h2 {
   font-size: 42px;
   color: #2d2d2f;
+}
+.reklama {
+  display: flex;
+  margin-top: 70px;
+}
+.reklama .item {
+  font-size: 12px;
+  margin-right: 70px;
+}
+
+h3 {
+  font-size: 36px;
+  color: #2d2d2f;
+}
+h2 span {
+  font-weight: 400;
+}
+
+h3 span {
+  font-weight: 400;
+}
+
+.select-house {
+  background-color: #eff3f7;
+  color: #716a6b;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px;
+  width: fit-content;
 }
 /* font-size
 font-weight
