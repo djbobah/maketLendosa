@@ -1,12 +1,123 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   background-image: url("img/house1.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
+
+  font-family: Roboto, sans-serif;
+  color: #ffffff;
 }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+.logo_text {
+  font-size: 9px;
+  color: #909195;
+}
+.bold_text {
+  font-weight: bold;
+}
+.raiting {
+  display: flex;
+}
+.raiting_label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: -45px;
+  margin-right: 35px;
+}
+.raiting_text {
+  font-size: 12px;
+  width: 150px;
+}
+.button_green {
+  background-color: #84b73d;
+}
+header .button_green {
+  width: 237px;
+  height: 45px;
+  text-align: center;
+  /* line-height: 45px; */
+  padding-top: 10px;
+
+  border-radius: 4px;
+}
+
+.logo {
+  /* margin-top: -35px; */
+  display: flex;
+}
+.logo img {
+  margin-top: -25px;
+  margin-right: 10px;
+}
+
+.flag {
+  margin-top: -35px;
+}
+.calc_wrapper a {
+  font-size: 11px;
+  color: #96989f;
+}
+.calc {
+  margin-left: 4px;
+  vertical-align: middle;
+  height: 19px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  line-height: 29px;
+}
+nav span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.online {
+  /* vertical-align: middle; */
+  /* display: flex; */
+  margin: 0 auto;
+}
+.online img {
+  vertical-align: middle;
+}
+.online span {
+  font-size: 10px;
+  color: #d2d3d6;
+}
+.phoneCall span {
+  font-size: 10px;
+  color: #d2d3d6;
+}
+.phoneCall div {
+  font-size: 16px;
+  font-weight: 500;
+}
+.phoneCall a {
+  color: #87bf3c;
+  text-decoration-style: dashed;
+  /* text-decoration: dashed; */
+}
+/* font-size
+font-weight
+font-style
+font-family
+line-height
+text-align
+text-transform */

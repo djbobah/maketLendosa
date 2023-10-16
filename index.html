@@ -4,52 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House World</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="top">
-      <header>
-        <!-- <div> -->
-        <img src="img/houseLogo.svg" alt="logo" />HOUSE WORLD
-        <span>Дома и бани от новгородских мастеров</span>
-        <!-- </div> -->
-        <!-- <div> -->
-        <img src="img/flag.svg" alt="" />4,9
-        <img src="img/Star_fill.svg" alt="star" />
-        <img src="img/Star_fill.svg" alt="star" />
-        <img src="img/Star_fill.svg" alt="star" />
-        <img src="img/Star_fill.svg" alt="star" />
-        <span>Рейтинг в Google на основании 180 отзывов</span>
-        <!-- </div> -->
-        <!-- <div> -->
-        <span>Прислать проект на расчет</span>
-        <img src="img/calc.svg" alt="calc" />
-        <!-- <div>info@house.world</div> -->
-        <!-- </div> -->
+    <header class="container header">
+      <div class="logo">
+        <img src="img/houseLogo.svg" alt="logo" />
+        <div>
+          <img src="img/HOUSE WORLD.svg" alt="HOUSE WORLD" />
+          <div class="logo_text">Дома и бани от новгородских мастеров</div>
+        </div>
+      </div>
+      <div class="raiting">
+        <img class="flag" src="img/flag.svg" alt="" /><span
+          class="raiting_label"
+          >4,9</span
+        >
+        <div>
+          <img src="img/Star_fill.svg" alt="star" />
+          <img src="img/Star_fill.svg" alt="star" />
+          <img src="img/Star_fill.svg" alt="star" />
+          <img src="img/Star_fill.svg" alt="star" />
+          <div class="raiting_text">
+            <span class="bold_text">Рейтинг в Google</span> на основании 180
+            отзывов
+          </div>
+        </div>
+      </div>
+      <div class="calc_wrapper">
+        <div class="button_green">
+          <span>Прислать проект на расчет</span>
+          <img class="calc" src="img/calc.svg" alt="calc" />
+        </div>
+        <img src="img/mail.svg" alt="" />
+        <a href="">info@house.world</a>
+      </div>
+
+      <div class="online">
         <img src="img/listMarker.svg" alt="listMarker" />
         <span>Мы онлайн</span>
-        <img src="img/watsapp.svg" alt="watsapp" />
-
-        <!-- <div> -->
+        <div><img src="img/socials.svg" alt="watsapp" /></div>
+      </div>
+      <div class="phoneCall">
         <img src="img/listMarker.svg" alt="listMarker" />
         <span>Без выходных с 10:00 до 20:00</span>
         <div>+7 (800) 000-00-00</div>
-        <div>Заказать обратный звонок</div>
-        <!-- </div> -->
-      </header>
-      <nav>
-        <span>проекты </span>
-        <span>фото работ</span>
-        <span>акции</span>
-        <span>услуги</span>
-        <span>заказчику</span>
-        <span>кон./такты</span>
-        <img src="img/heart.svg" alt="heart" /><span>избранное</span>
-        <img src="img/search.svg" alt="" /><span>поиск</span>
-      </nav>
-    </section>
-    <main>
+        <a href="">Заказать обратный звонок</a>
+      </div>
+    </header>
+    <nav class="container">
+      <div>
+        <span>проекты </span><img src="img/Arrow_down.svg" alt="Arrow_down" />
+      </div>
+      <span>фото работ</span>
+      <span>акции</span>
+      <div>
+        <span>услуги</span><img src="img/Arrow_down.svg" alt="Arrow_down" />
+      </div>
+      <div>
+        <span>заказчику</span><img src="img/Arrow_down.svg" alt="Arrow_down" />
+      </div>
+      <span>контакты</span>
+      <div><img src="img/heart.svg" alt="heart" /><span>избранное</span></div>
+      <div><img src="img/search.svg" alt="" /><span>поиск</span></div>
+    </nav>
+    <main class="container">
       <section>
         <div>
           <h1><b>Строительство деревянных домов </b>под ключ в Курске</h1>
@@ -627,7 +646,7 @@
               <div>Мы вышлем подборку вам в мессенджер</div>
               <div><b>Куда отправить подборку?</b></div>
               <div>
-                <img src="assets/images/watsapp.svg" alt="watsapp" />
+                <img src="img/watsapp.svg" alt="watsapp" />
                 <div>What’s app</div>
                 <img src="img/viber.svg" alt="viber" />
                 <div>Viber</div>
@@ -798,7 +817,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <nav>
         <span>проекты </span>
         <span>фото работ </span>
