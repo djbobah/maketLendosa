@@ -127,6 +127,8 @@ nav img {
 .phoneCall a {
   color: #87bf3c;
   text-decoration-style: dashed;
+  font-size: 12px;
+  line-height: 14px;
 
   /* text-decoration: dashed; */
 }
@@ -171,7 +173,7 @@ h2 {
   display: flex;
   margin-top: 70px;
 }
-.reklama .item {
+.reklama > .ritem {
   font-size: 12px;
   margin-right: 70px;
   color: #ffffff;
