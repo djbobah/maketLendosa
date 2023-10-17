@@ -350,6 +350,8 @@ figcaption {
 }
 .description {
   /* width: 260px; */
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 .promotion-card {
   color: #ffffff;
