@@ -165,6 +165,7 @@ h1 span {
 h2 {
   font-size: 42px;
   color: #2d2d2f;
+  text-align: center;
 }
 .reklama {
   display: flex;
@@ -179,6 +180,7 @@ h2 {
 h3 {
   font-size: 36px;
   color: #2d2d2f;
+  text-align: center;
 }
 h2 span {
   font-weight: 400;
@@ -276,6 +278,103 @@ figcaption {
   font-size: 23px;
   font-weight: bold;
 }
+.popular .item {
+  font-size: 13px;
+  background-color: #efefef;
+  border-radius: 4px;
+  color: #5c5f66;
+  padding: 3px 5px;
+  /* margin: 5px; */
+}
+
+.item + .selected {
+  color: white;
+  background-color: #73b918;
+}
+.popular a {
+  color: #f7d047;
+  text-decoration-style: dashed;
+}
+.card {
+  margin-top: 30px;
+  color: #7a7d81;
+}
+.card .price {
+  color: #73b918;
+  font-size: 32px;
+  font-weight: bold;
+}
+.card .orange_button {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.card .last {
+  display: flex;
+  /* vertical-align: middle; */
+}
+.personal-plan {
+  font-size: 9px;
+  color: #b8b8ba;
+}
+
+.item {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #efefef;
+  border-radius: 4px;
+  color: #5c5f66;
+  padding: 10px 45px;
+  /* margin: 5px; */
+}
+
+.selected {
+  color: white;
+  background-color: #73b918;
+}
+.perfectHouse-card {
+  margin-top: 40px;
+  display: flex;
+  color: #4c4f56;
+}
+.perfectHouse-card h3 {
+  color: #4c4f56;
+}
+.promotion {
+  display: flex;
+  height: 295px;
+}
+.promotion-card {
+  color: #ffffff;
+  background-image: url("img/promo1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  /* backgroud-size: contain; */
+}
+.promotion-card1 {
+  background-image: url("img/promo1.png");
+}
+.promotion-card2 {
+  background-image: url("img/promo2.png");
+}
+
+.promotion-card h3 {
+  color: #ffffff;
+}
+
+.white-button {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* .personal-plan img {
+  vertical-align: middle;
+} */
 
 /* font-size
 font-weight
@@ -284,3 +383,8 @@ font-family
 line-height
 text-align
 text-transform */
+
+/* background-image
+background-position
+background-size
+background-repeat */
