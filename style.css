@@ -342,13 +342,23 @@ figcaption {
 .promotion {
   display: flex;
   height: 295px;
+  /* text-align: left; */
+}
+.promotion h3 {
+  font-size: 27px;
+  text-align: left;
+}
+.description {
+  /* width: 260px; */
 }
 .promotion-card {
   color: #ffffff;
   background-image: url("img/promo1.png");
   background-repeat: no-repeat;
   background-position: top;
+  border-radius: 12px;
   /* backgroud-size: contain; */
+  padding: 25px 45px;
 }
 .promotion-card1 {
   background-image: url("img/promo1.png");
