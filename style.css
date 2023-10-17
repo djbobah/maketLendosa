@@ -12,7 +12,7 @@ body {
   background-size: contain;
 
   font-family: Roboto, sans-serif;
-  color: #ffffff;
+  color: #000000;
 }
 
 .container {
@@ -23,6 +23,7 @@ body {
   display: flex;
   margin-top: 24px;
   justify-content: space-between;
+  color: white;
 }
 .logo_text {
   font-size: 9px;
@@ -51,7 +52,7 @@ body {
   text-align: center;
   /* line-height: 45px; */
   padding-top: 10px;
-
+  color: #fcfcfe;
   border-radius: 4px;
   background-color: #84b73d;
 }
@@ -68,6 +69,9 @@ body {
 .flag {
   margin-top: -45px;
 }
+.calc_wrapper {
+  text-align: right;
+}
 .calc_wrapper a {
   font-size: 11px;
   color: #96989f;
@@ -80,6 +84,7 @@ body {
 
 .nav {
   margin-top: 20px;
+  color: white;
 }
 nav {
   display: flex;
@@ -90,11 +95,16 @@ nav span {
   text-transform: uppercase;
   font-size: 16px;
 }
+nav img {
+  vertical-align: middle;
+  padding: 5px;
+}
 
 .online {
   /* vertical-align: middle; */
   /* display: flex; */
   margin: 0 auto;
+  text-align: center;
 }
 .online > img {
   vertical-align: middle;
@@ -104,6 +114,7 @@ nav span {
   color: #d2d3d6;
 }
 .phoneCall {
+  text-align: right;
 }
 .phoneCall span {
   font-size: 10px;
@@ -116,19 +127,22 @@ nav span {
 .phoneCall a {
   color: #87bf3c;
   text-decoration-style: dashed;
+
   /* text-decoration: dashed; */
 }
 h1 {
   margin-top: 50px;
   font-size: 46px;
   width: 430px;
+  color: white;
 }
-h1 > span {
+h1 span {
   font-weight: 300;
 }
-.baner > p {
+.baner p {
   margin-top: 20px;
   font-size: 20px;
+  color: white;
 }
 .baner > button {
   width: 285px;
@@ -136,17 +150,17 @@ h1 > span {
 }
 .orange_button {
   cursor: pointer;
-  color: FBFFFF;
+  color: #fbffff;
   background-color: #feaa01;
   border-radius: 4px;
+  width: fit-content;
+  padding: 20px 40px;
 }
 .baner .orange_button {
   margin-top: 40px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  width: fit-content;
-  padding: 20px 40px;
 }
 h2 {
   font-size: 42px;
@@ -159,6 +173,7 @@ h2 {
 .reklama .item {
   font-size: 12px;
   margin-right: 70px;
+  color: #ffffff;
 }
 
 h3 {
@@ -181,6 +196,87 @@ h3 span {
   padding: 5px;
   width: fit-content;
 }
+
+.select-house + span {
+  color: #262425;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+figcaption {
+  color: #555050;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hand {
+  font-size: 10px;
+  font-weight: 400;
+}
+.hand span {
+  font-weight: bold;
+}
+.FIO {
+  font-size: 26px;
+  font-weight: 500;
+  color: #272627;
+  line-height: 18px;
+}
+.profession {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #a09ea1;
+}
+.question {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #4b4747;
+}
+.sale-white {
+  color: #f3f3f3;
+}
+.upper-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 23px;
+}
+.build {
+  color: #ffffff;
+}
+.house-header-x2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.house-header-x1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+.build-badge {
+  color: #000000;
+  font-size: 9px;
+  font-weight: 600;
+  /* border: #000000; */
+  border-radius: 50px;
+
+  width: fit-content;
+  padding: 8px;
+}
+.big-price-text-x2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.small-price-text {
+  font-size: 13px;
+  font-weight: 400;
+}
+.big-price-text {
+  font-size: 23px;
+  font-weight: bold;
+}
+
 /* font-size
 font-weight
 font-style
