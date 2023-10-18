@@ -13,6 +13,7 @@ body {
 
   font-family: Roboto, sans-serif;
   color: #000000;
+  background-color: #f5f6fa;
 }
 
 .container {
@@ -165,7 +166,7 @@ h1 span {
   font-size: 16px;
 }
 h2 {
-  font-size: 42px;
+  font-size: 47px;
   color: #2d2d2f;
   text-align: center;
 }
@@ -386,6 +387,94 @@ figcaption {
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* .housesLastYear {
+  display: inline-block;
+} */
+.housesLastYear > div {
+  display: inline-block;
+  margin: 10px;
+}
+.geo {
+  color: #85b73e;
+  font-size: 18px;
+}
+.housesLastYear h3 {
+  color: #4c4f56;
+  font-size: 36px;
+}
+.houseLastYear-description > div {
+  display: inline-block;
+  margin: 10px;
+}
+.houseLastYear-small-text {
+  font-size: 12px;
+  line-height: 13px;
+  color: #8e9093;
+}
+.houseLastYear-digit {
+  font-size: 28px;
+  line-height: 29px;
+  color: #434749;
+  font-weight: bold;
+}
+.houseLastYear-medium-text {
+  font-size: 16px;
+  line-height: 17px;
+  color: #434749;
+}
+.houseLastYear-medium-text2 {
+  font-size: 18px;
+  line-height: 19px;
+  color: #56595f;
+}
+.excursion > h2 {
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 38px;
+  width: 600px;
+  text-align: left;
+}
+.excursion > span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  width: 600px;
+  text-align: left;
+  color: #4c4f56;
+  padding-bottom: 30px;
+}
+
+.excursion-inline > div {
+  margin: 10px;
+  display: inline-block;
+  width: 160px;
+  color: #000000;
+}
+.excursion-form {
+  font-size: 12px;
+  line-height: 14px;
+  color: #413e3f;
+}
+.excursion-form > .orange_button {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 900;
+}
+.excursion-form > span {
+  font-size: 10px;
+}
+
+.catalog h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #4c4f56;
+  font-weight: 400;
+}
+/* .housesLastYear  div,
+img {
+  
+} */
 /* .personal-plan img {
   vertical-align: middle;
 } */
