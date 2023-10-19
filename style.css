@@ -169,6 +169,7 @@ h2 {
   font-size: 47px;
   color: #2d2d2f;
   text-align: center;
+  line-height: 50px;
 }
 .reklama {
   display: flex;
@@ -464,6 +465,10 @@ figcaption {
 .excursion-form > span {
   font-size: 10px;
 }
+/* 
+.catalog {
+  display: block;
+} */
 
 .catalog h4 {
   font-size: 24px;
@@ -471,6 +476,322 @@ figcaption {
   color: #4c4f56;
   font-weight: 400;
 }
+.catalog p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #4c4f56;
+}
+.catalog p + p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #2d2d2f;
+}
+.socials > div {
+  display: inline-block;
+  width: 72px;
+  height: 82px;
+  vertical-align: middle;
+  border-radius: 4px;
+  border: 1px;
+  border-color: black;
+  /* border-style: dashed; */
+  font-size: 13px;
+  line-height: 16px;
+  color: #706f75;
+}
+.socials > div > div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  /* разобраться с центрированием */
+}
+
+.socials div:hover {
+  box-shadow: 0px 4px 24px 0px rgba(28, 24, 31, 0.2);
+}
+
+/* .catalog input {
+  width: 258px;
+  height: 42px;
+  font-size: 21px;
+  line-height: 24px;
+  color: #7a7d81;
+  background-color: #efefef;
+  border-radius: 5px;
+  border: none;
+} */
+.tel {
+  width: 258px;
+  height: 42px;
+  font-size: 21px;
+  line-height: 24px;
+  color: #7a7d81;
+  background-color: #efefef;
+  border-radius: 5px;
+  border: none;
+}
+.catalog .orange_button {
+  border: none;
+  font-weight: bold;
+}
+
+.confidential {
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: 300;
+  color: #413e3f;
+}
+.confidential span {
+  font-weight: 600;
+}
+
+.review > div {
+  display: inline-block;
+  /* border-style: dotted; */
+  width: 300px;
+  height: 180px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 14px;
+  margin-right: 15px;
+}
+.comentator {
+  display: inline-block;
+  /* border-style: dotted; */
+  width: auto;
+  margin: 0 15px;
+  vertical-align: top;
+  /* height: 230px; */
+}
+.comentator h5 {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 130px;
+}
+.comentator div {
+  font-size: 12px;
+  line-height: 13px;
+  color: #6d7176;
+}
+.comment-description {
+  position: relative;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: black;
+  width: 250px;
+}
+.comment-description a {
+  position: absolute;
+  right: -35px;
+  bottom: 3px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: #f3b43f;
+}
+.director > div + div {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+}
+.dir-description {
+  color: #6f7276;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dir-reklama > div {
+  display: inline-block;
+  width: max-content;
+  /* border-style: dotted; */
+  margin: 15px;
+}
+.dir-reklama .dir-small-text {
+  color: #434749;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+.dir-reklama .dir-digit {
+  color: #262425;
+
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 48px;
+}
+div .dir-small-text {
+  width: 100px;
+}
+
+.question {
+  display: flex;
+}
+.question > div {
+  width: 45%;
+  text-align: left;
+}
+.question h2 {
+  text-align: left;
+}
+.question > div > p {
+  width: 50%;
+  text-align: left;
+  color: #565962;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.smeta h2 {
+  color: #2d2d2f;
+  font-size: 35px;
+
+  font-weight: 400;
+  line-height: 38px;
+}
+.smeta p {
+  color: #494b50;
+  /* text-align: center; */
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.smeta-reklama {
+  color: #494b50;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  width: 284px;
+  /* border-style: dashed; */
+  /* display: inline-block; */
+}
+.smeta-reklama div {
+  margin-left: 25px;
+}
+.smeta h4 {
+  color: #262425;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.smeta p {
+  color: #4c4f56;
+  text-align: center;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.smeta input {
+  width: 257px;
+  height: 39px;
+  border-radius: 4px;
+  border: 1px solid #7fb63c;
+  color: #7fb63c;
+}
+.smeta input + input {
+  width: 258px;
+  height: 42px;
+  font-size: 21px;
+  line-height: 24px;
+  color: #7a7d81;
+  background-color: #efefef;
+  border-radius: 5px;
+  border: none;
+}
+.smeta button {
+  border: none;
+}
+.contacts h4 {
+  color: #000;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.address {
+  color: #4c4c4d;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.listItem {
+  color: #605f60;
+
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.contacts .phone {
+  color: #363435;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.contacts a {
+  color: #8cb746;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  text-decoration: underline dotted;
+}
+.bold-listItem {
+  color: #363435;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+}
+.contacts .button_green {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 44px;
+}
+.map {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.footer {
+  /* width: 1440px; */
+  height: 160px;
+  background-color: #373739;
+  color: #fbffff;
+}
+.footer > div {
+  margin: 0 80px;
+  padding: 35px 0 55px 0;
+}
+
+.footer nav .span {
+  font-size: 16px;
+  font-weight: 500;
+  /* padding: 35px 0 55px 0; */
+}
+.rights {
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-between;
+}
+/* .map div {
+  display: inline-block;
+} */
 /* .housesLastYear  div,
 img {
   

@@ -716,14 +716,19 @@
           <form action="#" class="excursion-form">
             <div>
               <label
-                >Укажите дату: <input type="date" name="dateGuide"
+                >Укажите дату: <input class="tel" type="date" name="dateGuide"
               /></label>
             </div>
 
             <div>
               <label
                 >Введите телефон:
-                <input type="tel" name="phoneGuide" placeholder="+7" value=""
+                <input
+                  class="tel"
+                  type="tel"
+                  name="phoneGuide"
+                  placeholder="+7"
+                  value=""
               /></label>
             </div>
             <div class="orange_button" type="submit">
@@ -743,132 +748,157 @@
           <form action="#">
             <div>
               <h4><b>Скачайте каталог</b> топовых проектов</h4>
-              <div>Мы вышлем подборку вам в мессенджер</div>
-              <div><b>Куда отправить подборку?</b></div>
-              <div>
-                <img src="img/watsapp.svg" alt="watsapp" />
-                <div>What’s app</div>
-                <img src="img/viber.svg" alt="viber" />
-                <div>Viber</div>
-                <img src="img/telegram.svg" alt="telegram" />
-                <div>Telegram</div>
+              <p>Мы вышлем подборку вам в мессенджер</p>
+              <p><b>Куда отправить подборку?</b></p>
+              <div class="socials">
+                <div>
+                  <img src="img/watsapp.svg" alt="watsapp" />
+                  <div>What’s app</div>
+                </div>
+                <div>
+                  <img src="img/viber.svg" alt="viber" />
+                  <div>Viber</div>
+                </div>
+                <div>
+                  <img src="img/telegram.svg" alt="telegram" />
+                  <div>Telegram</div>
+                </div>
               </div>
-              <input type="tel" placeholder="+7" name="phoneCatalog" />
-              <button type="submit">Получить каталог проектов</button>
-              <div>
+              <input
+                class="tel"
+                type="tel"
+                placeholder="+7"
+                name="phoneCatalog"
+              />
+              <button class="orange_button" type="submit">
+                Получить каталог проектов
+              </button>
+              <div class="confidential">
                 Нажимая на кнопку, вы соглашаетесь с условиями
-                <b>Политики конфиденциальности</b>
+                <span>Политики конфиденциальности</span>
               </div>
             </div>
           </form>
         </div>
       </section>
-      <section>
+      <section class="review">
         <h2>Более 200 отзывов <span> от наших клиентов</span></h2>
         <div>
           <img src="img/reviewsOfWoman.png" alt="" />
-          <h5>Дарья Достоевская</h5>
-          <img src="img/google.svg" alt="" />
-          <div>23 декабря 2022</div>
-          <div>
+          <div class="comentator">
+            <h5>Дарья Достоевская</h5>
+            <img src="img/google.svg" alt="google" />
+            <div>23 декабря 2022</div>
+          </div>
+          <div class="comment-description">
             Рыбатекст используется дизайнерами, проектировщиками и
             фронтендерами, когда нужно быстро заполнить макеты или прототипы
-            содержимым...
+            содержимым... <a href="#">Читать дальше</a>
           </div>
-          <a href="#">Читать дальше</a>
         </div>
         <div>
           <img src="img/reviewsOfMan.png" alt="" />
-          <h5>Евгений Маяковский</h5>
-          <div>23 декабря 2022</div>
-          <div>
+          <div class="comentator">
+            <h5>Евгений Маяковский</h5>
+            <img src="img/google.svg" alt="google" />
+            <div>23 декабря 2022</div>
+          </div>
+          <div class="comment-description">
             Рыбатекст используется дизайнерами, проектировщиками и
             фронтендерами, когда нужно быстро заполнить макеты или прототипы
-            содержимым...
+            содержимым...<a href="#">Читать дальше</a>
           </div>
-          <a href="#">Читать дальше</a>
         </div>
         <div>
           <img src="img/reviewsOfWoman.png" alt="" />
-          <h5>Дарья Достоевская</h5>
-          <div>23 декабря 2022</div>
-          <div>
+          <div class="comentator">
+            <h5>Дарья Достоевская</h5>
+            <img src="img/google.svg" alt="google" />
+            <div>23 декабря 2022</div>
+          </div>
+          <div class="comment-description">
             Рыбатекст используется дизайнерами, проектировщиками и
             фронтендерами, когда нужно быстро заполнить макеты или прототипы
-            содержимым...
-          </div>
-          <a href="#">Читать дальше</a>
-        </div>
-      </section>
-      <section>
-        <img src="img/OlegSoloviev.png" alt="" />
-        <h2>
-          Здравствуйте, я Олег Соловьев,
-          <span>директор и основатель компании.</span>
-        </h2>
-        <div>
-          На рынке строительных услуг мы уже 14 лет. за это время нам удалось
-          сформировать сплоченный коллектив специалистов с более чем
-          двадцатилетним стажем. Вместе с тем я слежу за тем, чтобы наши
-          специалисты оставались в курсе последних технологий, совершенствовали
-          свои навыки.
-        </div>
-        <div>
-          <div>
-            <div>
-              <img src="img/clickPoint.svg" alt="clickPoint" />
-              <span>10</span>
-              <span>лет</span>
-            </div>
-            <div>компания на рынке</div>
-          </div>
-          <div>
-            <div>
-              <img src="img/clickPoint.svg" alt="clickPoint" />
-              <span>200</span>
-              <span>+</span>
-            </div>
-            <div>объектов постреоно</div>
-          </div>
-          <div>
-            <div>
-              <img src="img/clickPoint.svg" alt="clickPoint" />
-              <span>5</span>
-              <span>лет</span>
-            </div>
-            <div>гарантия на работы</div>
+            содержимым...<a href="#">Читать дальше</a>
           </div>
         </div>
       </section>
-      <section>
+      <section class="director">
+        <div>
+          <img src="img/OlegSoloviev.png" alt="" />
+        </div>
+        <div>
+          <h2>
+            Здравствуйте,<br />
+            я Олег Соловьев,
+            <span>директор и основатель компании.</span>
+          </h2>
+          <p class="dir-description">
+            На рынке строительных услуг мы уже 14 лет. за это время нам удалось
+            сформировать сплоченный коллектив специалистов с более чем
+            двадцатилетним стажем. Вместе с тем я слежу за тем, чтобы наши
+            специалисты оставались в курсе последних технологий,
+            совершенствовали свои навыки.
+          </p>
+          <div class="dir-reklama">
+            <div>
+              <div>
+                <img src="img/clickPoint.svg" alt="clickPoint" />
+                <span class="dir-digit">10</span>
+                <span class="dir-small-text">лет</span>
+              </div>
+              <div class="dir-small-text">компания на рынке</div>
+            </div>
+            <div>
+              <div>
+                <img src="img/clickPoint.svg" alt="clickPoint" />
+                <span class="dir-digit">200</span>
+                <span class="dir-small-text">+</span>
+              </div>
+              <div class="dir-small-text">объектов постреоно</div>
+            </div>
+            <div>
+              <div>
+                <img src="img/clickPoint.svg" alt="clickPoint" />
+                <span class="dir-digit">5</span>
+                <span class="dir-small-text">лет</span>
+              </div>
+              <div class="dir-small-text">гарантия на работы</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question">
         <div>
           <h2><span>Мы готовы ответить на</span> любой вопрос</h2>
-          <div>
+          <p>
             Рыбатекст используется дизайнерами, проектировщиками и
             фронтендерами, когда нужно выстро заполнить макеты или прототипы
             содержимым.
-          </div>
+          </p>
         </div>
         <div>image with dropdown list</div>
       </section>
-      <section>
+      <section class="smeta">
         <div>
           <h2>
-            Если у вас уже есть смета на строительство
-            <span
-              >в 95% случаев мы предлагаем меньшую стоимость и без потери
-              качества</span
-            >
+            <b>Если у вас уже есть смета на строительство</b>
+            в 95% случаев мы предлагаем меньшую стоимость и без потери качества
           </h2>
-          <h5>Как мы этого добиваемся?</h5>
-          <div>
+          <p>Как мы этого добиваемся?</p>
+          <div class="smeta-reklama">
+            <img src="img/checkSuccess2.svg" alt="checkSuccess" />
+            <!-- <div> -->
             <b>Оптовые скидки</b> на проверенные материалы от партнеров (эномоия
             до 30%)
+            <!-- </div> -->
           </div>
-          <div>
+          <div class="smeta-reklama">
+            <img src="img/checkSuccess2.svg" alt="checkSuccess" />
             <b>Оптимальный подбор</b> материалов и поставщиков (экономия до 15%)
           </div>
-          <div>
+          <div class="smeta-reklama">
+            <img src="img/checkSuccess2.svg" alt="checkSuccess" />
             <b>Налаженный рабочий процесс</b> без потери времени (экономия до
             20%)
           </div>
@@ -878,65 +908,79 @@
             Просто прикрепите готовую смету и вы узнаете, как сэкономить на
             стройке
           </h4>
-          <div>
+          <p>
             Инженер-сметчик рассчитает стоимость работ и материалов по оптовым
             ценам
-          </div>
+          </p>
           <input type="text" />
           <div><b>Куда отправить подборку?</b></div>
-          <div>
-            <img src="img/watsapp.svg" alt="watsapp" />
-            <div>What’s app</div>
-            <img src="img/viber.svg" alt="viber" />
-
-            <div>Viber</div>
-            <img src="img/telegram.svg" alt="telegram" />
-
-            <div>Telegram</div>
+          <div class="socials">
+            <div>
+              <img src="img/watsapp.svg" alt="watsapp" />
+              <div>What’s app</div>
+            </div>
+            <div>
+              <img src="img/viber.svg" alt="viber" />
+              <div>Viber</div>
+            </div>
+            <div>
+              <img src="img/telegram.svg" alt="telegram" />
+              <div>Telegram</div>
+            </div>
           </div>
-          <input type="tel" placeholder="+7" />
-          <button>Получить каталог проектов</button>
-          <div>
+          <input class="tel" type="tel" placeholder="+7" />
+          <button class="orange_button">Получить смету</button>
+          <div class="confidential">
             Нажимая на кнопку, вы соглашаетесь с условиями
-            <b>Политики конфиденциальности</b>
+            <span>Политики конфиденциальности</span>
           </div>
         </div>
       </section>
-      <section>
+      <section class="contacts">
         <div>
           <h4>Наши контакты</h4>
-          <div>
+          <div class="address">
             <img src="img/placeOnMap2.svg" alt="place on map" />г. Москва, улица
             Рубинштейна, 43
           </div>
-          <div>+ 7 (800) 000-00-00</div>
+          <div class="listItem">
+            <img src="img/listMarker.svg" alt="listMarker" />Без выходных с
+            10:00 до 20:00
+          </div>
+          <div class="phone">+ 7 (800) 000-00-00</div>
           <a href="#">Заказать обратный звонок</a>
-          <div>Пишите , мы онлайн</div>
+          <div class="bold-listItem">
+            <img src="img/listMarker.svg" alt="listMarker" />Пишите , мы онлайн
+          </div>
           <img src="img/watsapp.svg" alt="watsapp" />
           <img src="img/mail2.svg" alt="mail" />
           <br />
-          <button>Рассчитать стоимость</button>
+          <div class="button_green">
+            Рассчитать стоимость <img src="img/calc.svg" alt="" />
+          </div>
         </div>
-        <div>
+        <div class="map">
           <div>Приезжайте к нам в офис</div>
-          <div>image map</div>
+          <div><img src="img/map.png" alt="" /></div>
         </div>
       </section>
     </main>
-    <footer class="container">
-      <nav>
-        <span>проекты </span>
-        <span>фото работ </span>
-        <span>акции </span>
-        <span>услуги </span>
-        <span>заказчику </span>
-        <span>контакты </span>
-        <span><img src="img/heart.svg" alt="heart" />избранное</span>
-        <span><img src="img/search.svg" alt="" />поиск</span>
-      </nav>
+    <footer class="footer">
       <div>
-        <div>Все права защищены 2022.</div>
-        <div>Политика обработки персональных данных</div>
+        <nav>
+          <span>проекты </span>
+          <span>фото работ </span>
+          <span>акции </span>
+          <span>услуги </span>
+          <span>заказчику </span>
+          <span>контакты </span>
+          <span><img src="img/heart.svg" alt="heart" />избранное</span>
+          <span><img src="img/search.svg" alt="" />поиск</span>
+        </nav>
+        <div class="rights">
+          <div>Все права защищены 2022.</div>
+          <div>Политика обработки персональных данных</div>
+        </div>
       </div>
     </footer>
   </body>
