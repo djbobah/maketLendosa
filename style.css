@@ -439,7 +439,7 @@ figcaption {
   background-repeat: no-repeat;
 }
 .porular-card__body {
-  padding: 250px 0px 30px 30px;
+  padding: 250px 0px 0px 30px;
 }
 .porular-card__title {
   font-size: 30px;
@@ -478,7 +478,7 @@ figcaption {
 }
 .popular-card-description-list__item {
   /* vertical-align: bottom; */
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .popular-card-description__text_bold-right {
   font-weight: 600;
@@ -487,12 +487,12 @@ figcaption {
 .popular-card-description-list__item_bigHeight {
   height: 32px;
   /* display: inline; */
-  vertical-align: bottom;
 }
-/* .bot {
-  display: block;
+.popular-card-description__text_bottom {
+  display: inline-block;
   height: 32px;
-} */
+  padding-top: 18px;
+}
 .popular-card-description__price {
   color: #73b918;
   font-size: 32px;
