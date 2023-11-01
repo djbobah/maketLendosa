@@ -91,6 +91,7 @@ nav {
   display: flex;
   justify-content: space-between;
   line-height: 29px;
+  align-items: center;
 }
 nav span {
   text-transform: uppercase;
@@ -342,6 +343,7 @@ figcaption {
   line-height: 25px;
   padding: 0 8px;
   border-radius: 12px;
+  color: #000;
   background-color: #fff;
   position: absolute;
   top: 40px;
@@ -406,27 +408,30 @@ figcaption {
   color: #ffffff;
   padding: 50px 0;
 }
-
-.menu-popular_item {
+.menu-popular {
   font-size: 13px;
-  background-color: #efefef;
-  border-radius: 4px;
   color: #5c5f66;
-  padding: 3px 5px;
-  /* margin: 5px; */
   margin-bottom: 26px;
 }
+.menu-popular__arrow {
+  /* align-items: center; */
+}
+.menu-popular__item {
+  background-color: #efefef;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
 
-.menu-popular_item__selected {
+.menu-popular__item_selected {
   color: white;
   background-color: #73b918;
 }
-.popular a {
+.menu-popular__link {
   color: #f7d047;
   text-decoration-style: dashed;
 }
-.card {
-  margin-top: 30px;
+.porular__card {
+  /* margin-top: 30px; */
   color: #7a7d81;
 }
 .card .price {
