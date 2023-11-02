@@ -474,7 +474,7 @@ figcaption {
   font-weight: 600;
 }
 .popular-card-description__list {
-  padding: 15px;
+  padding: 15px 30px 15px 15px;
   /* color: red; */
 }
 .popular-card-description__list ::marker {
