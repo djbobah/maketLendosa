@@ -404,7 +404,7 @@ figcaption {
 .card__price_silver {
   color: silver;
 }
-/* секция Посмотрите популярные проекты домов */
+/* \/ секция Посмотрите популярные проекты домов */
 .container-popular {
   color: #ffffff;
   padding: 50px 0;
@@ -508,18 +508,6 @@ figcaption {
   /* vertical-align: middle; */
 }
 
-/* .card .price {
-  color: #73b918;
-  font-size: 32px;
-  font-weight: bold;
-}
-.card .orange_button {
-  padding: 5px 10px;
-  font-size: 12px;
-}
-.card .last {
-  display: flex;
-  /* vertical-align: middle; */
 .popular-card__personal-plan {
   color: #b8b8ba;
   font-size: 9px;
@@ -541,6 +529,8 @@ figcaption {
   text-decoration: none;
   color: inherit;
 }
+/* /\ секция Посмотрите популярные проекты домов */
+
 .item {
   font-size: 18px;
   font-weight: 500;
