@@ -534,10 +534,12 @@ figcaption {
   /* display: inline-block; */
   margin: 0 8px;
 }
-.span {
+.popular-card__personal-plan_link {
   width: 80px;
   position: absolute;
   top: -2px;
+  text-decoration: none;
+  color: inherit;
 }
 .item {
   font-size: 18px;
