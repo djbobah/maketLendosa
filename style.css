@@ -624,11 +624,13 @@ figcaption {
   display: inline-block;
   /* background-color: orange; */
   width: calc(50% - 15px);
+  min-width: 535px;
   margin-right: 25px;
 }
 .houseLastYear__right {
   display: inline-block;
   width: calc(50% - 15px);
+  min-width: 535px;
   background-color: bisque;
   vertical-align: top;
   /* min-width: 510px; */
@@ -1367,9 +1369,20 @@ div .dir-small-text {
   .houseLastYear__label {
     font-size: 26px;
     text-align: center;
-    /* align-items: center;  */
+    width: 100%;
 
     font-weight: 600;
+  }
+  .houseLastYear__description {
+    display: flex;
+    justify-content: center;
+  }
+  .houseLastYear-right-middle__container {
+    display: flex;
+    justify-content: center;
+  }
+  .houseLastYear-right-middle__container_col {
+    margin: 20px;
   }
   /* .houseLastYear__description {
     align-items: center;
@@ -1501,13 +1514,6 @@ div .dir-small-text {
     font-size: 14px;
   }
 
-  .houseLastYear__label {
-    /* color: #4c4f56; */
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    /* font-weight: 600; */
-  }
   .houseLastYear__left {
     display: block;
 
@@ -1522,6 +1528,29 @@ div .dir-small-text {
     display: block;
     width: 100%;
   }
+  .houseLastYear__label {
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+
+    font-weight: 600;
+  }
+  .houseLastYear__description {
+    display: flex;
+    justify-content: center;
+  }
+  .houseLastYear-right-middle__container {
+    display: flex;
+    justify-content: center;
+  }
+  .houseLastYear-right-middle__container_col {
+    margin: 20px;
+  }
+  .houseLastYear-right__button {
+    display: flex;
+    justify-content: center;
+  }
+
   .map {
     /* background-color: blueviolet; */
     padding-left: 20px;
