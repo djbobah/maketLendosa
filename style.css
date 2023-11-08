@@ -631,7 +631,6 @@ figcaption {
   display: inline-block;
   width: calc(50% - 15px);
   min-width: 535px;
-  /* background-color: bisque; */
   vertical-align: top;
   /* min-width: 510px; */
 }
@@ -1358,7 +1357,6 @@ div .dir-small-text {
     display: none;
   }
   .houseLastYear__right {
-    /* background-color: bisque; */
     display: block;
     margin: auto;
     margin-top: 20px;
