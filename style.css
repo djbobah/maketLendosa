@@ -247,6 +247,48 @@ h3 span {
   background-color: bisque;
 }
 
+.progress {
+  margin: 30px;
+  width: 540px;
+  height: 20px;
+}
+
+.form-calc-price__select-house {
+  background-color: #eff3f7;
+  color: #716a6b;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.form-calc-price__question {
+  color: #262425;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.form-calc-price__houses {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 30px;
+}
+
+.form-calc-price__houses-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-calc-price__houses-caption {
+  color: #555050;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
 /* секция Мы строим деревянные дома и бани с учетом всех особенностей Курска */
 .container-build {
   color: #ffffff;

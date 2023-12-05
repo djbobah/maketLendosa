@@ -216,27 +216,48 @@ h3 span {
 .form-calc-price__left-container {
   background-color: bisque;
 }
+.progress {
+  margin: 30px;
+  width: 540px;
+  height: 20px;
+}
+.form-calc-price__select-house {
+  background-color: #eff3f7;
+  color: #716a6b;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px;
+  width: fit-content;
+  margin-right: 10px;
+}
 
-// .select-house {
-//   background-color: #eff3f7;
-//   color: #716a6b;
-//   font-size: 20px;
-//   border-radius: 4px;
-//   padding: 5px;
-//   width: fit-content;
-// }
-
-// .select-house + span {
-//   color: $dark_text;
-//   font-size: 24px;
-//   font-weight: 500;
-// }
-
-// figcaption {
-//   color: #555050;
-//   font-size: 18px;
-//   font-weight: 500;
-// }
+.form-calc-price__question {
+  color: $dark_text;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+}
+.form-calc-price__houses {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 30px;
+}
+.form-calc-price__houses-img {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+.form-calc-price__houses-caption {
+  color: #555050;
+  font-size: 18px;
+  font-weight: 500;
+  // justify-content: center;
+  // align-items: center;
+  margin: 0 auto;
+  // align-items: center;
+}
 
 // .hand {
 //   font-size: 10px;
