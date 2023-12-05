@@ -201,62 +201,69 @@ h2 span {
 h3 span {
   font-weight: 400;
 }
+.form-calc-price {
+  margin-top: 60px;
+  background-color: $white;
+  width: 1105px;
+  height: 701px;
+  border-radius: 5px 5px 100px 5px;
+  box-shadow: 0px 0px 90px 0px #cacaca;
+}
+// .select-house {
+//   background-color: #eff3f7;
+//   color: #716a6b;
+//   font-size: 20px;
+//   border-radius: 4px;
+//   padding: 5px;
+//   width: fit-content;
+// }
 
-.select-house {
-  background-color: #eff3f7;
-  color: #716a6b;
-  font-size: 20px;
-  border-radius: 4px;
-  padding: 5px;
-  width: fit-content;
-}
+// .select-house + span {
+//   color: $dark_text;
+//   font-size: 24px;
+//   font-weight: 500;
+// }
 
-.select-house + span {
-  color: $dark_text;
-  font-size: 24px;
-  font-weight: 500;
-}
+// figcaption {
+//   color: #555050;
+//   font-size: 18px;
+//   font-weight: 500;
+// }
 
-figcaption {
-  color: #555050;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.hand {
-  font-size: 10px;
-  font-weight: 400;
-}
-.hand span {
-  font-weight: bold;
-}
-.FIO {
-  font-size: 26px;
-  font-weight: 500;
-  color: #272627;
-  line-height: 18px;
-}
-.profession {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 10px;
-  color: #a09ea1;
-}
-.question {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 12px;
-  color: #4b4747;
-}
-.sale-white {
-  color: #f3f3f3;
-}
-.upper-text {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 23px;
-}
+// .hand {
+//   font-size: 10px;
+//   font-weight: 400;
+// }
+// .hand span {
+//   font-weight: bold;
+// }
+// .FIO {
+//   font-size: 26px;
+//   font-weight: 500;
+//   color: #272627;
+//   line-height: 18px;
+// }
+// .profession {
+//   font-size: 14px;
+//   font-weight: 400;
+//   line-height: 10px;
+//   color: #a09ea1;
+// }
+// .question {
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 12px;
+//   color: #4b4747;
+// }
+// .sale-white {
+//   color: #f3f3f3;
+// }
+// .upper-text {
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   font-size: 12px;
+//   line-height: 23px;
+// }
 
 /* секция Мы строим деревянные дома и бани с учетом всех особенностей Курска */
 .container-build {
