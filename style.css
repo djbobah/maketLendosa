@@ -33,12 +33,12 @@ p {
   color: white;
 }
 
-.logo_text {
+.logo-text {
   font-size: 9px;
   color: #909195;
 }
 
-.bold_text {
+.bold-text {
   font-weight: bold;
 }
 
@@ -46,14 +46,14 @@ p {
   display: flex;
 }
 
-.raiting_label {
+.raiting-label {
   font-size: 20px;
   font-weight: 500;
   margin-left: -38px;
   margin-right: 35px;
 }
 
-.raiting_text {
+.raiting-text {
   font-size: 12px;
   width: 150px;
 }
@@ -83,11 +83,11 @@ p {
   margin-top: -45px;
 }
 
-.calc_wrapper {
+.calc-wrapper {
   text-align: right;
 }
 
-.calc_wrapper a {
+.calc-wrapper a {
   font-size: 11px;
   color: #96989f;
 }
@@ -236,6 +236,15 @@ h3 span {
   height: 701px;
   border-radius: 5px 5px 100px 5px;
   box-shadow: 0px 0px 90px 0px #cacaca;
+  display: flex;
+}
+
+.form-calc-price__left {
+  padding: 80px 120px 40px 150px;
+}
+
+.form-calc-price__left-container {
+  background-color: bisque;
 }
 
 /* секция Мы строим деревянные дома и бани с учетом всех особенностей Курска */

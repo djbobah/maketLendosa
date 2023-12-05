@@ -19,12 +19,12 @@
         <img src="img/houseLogo.svg" alt="logo" />
         <div>
           <img src="img/HOUSE WORLD.svg" alt="HOUSE WORLD" />
-          <div class="logo_text">Дома и бани от новгородских мастеров</div>
+          <div class="logo-text">Дома и бани от новгородских мастеров</div>
         </div>
       </div>
       <div class="raiting">
         <img class="flag" src="img/flag.svg" alt="" /><span
-          class="raiting_label"
+          class="raiting-label"
           >4,9</span
         >
         <div>
@@ -32,13 +32,13 @@
           <img src="img/Star_fill.svg" alt="star" />
           <img src="img/Star_fill.svg" alt="star" />
           <img src="img/Star_fill.svg" alt="star" />
-          <div class="raiting_text">
-            <span class="bold_text">Рейтинг в Google</span> на основании 180
+          <div class="raiting-text">
+            <span class="bold-text">Рейтинг в Google</span> на основании 180
             отзывов
           </div>
         </div>
       </div>
-      <div class="calc_wrapper">
+      <div class="calc-wrapper">
         <div class="button_green">
           <span>Прислать проект на расчет</span>
           <img class="calc" src="img/calc.svg" alt="calc" />
@@ -113,54 +113,60 @@
       </section>
       <section>
         <div class="form-calc-price">
-          <h3>
-            Рассчитайте предварительную стоимость дома <span>за 1 минуту</span>
-          </h3>
-          <div>
-            <div>
-              <span class="select-house">01.</span>
-              <span>Что будем строить?</span>
-            </div>
-            <figure>
-              <img src="img/houseSmall.png" alt="house small" />
-              <figcaption>Дом</figcaption>
-            </figure>
-            <figure>
-              <img src="img/bathhouse.png" alt="bathhouse" />
-              <figcaption>Баня</figcaption>
-            </figure>
-
-            <div>
-              <div class="hand">
-                <img src="img/clickPoint.svg" alt="" />
-                <img src="img/hand.svg" alt="" />
-                <span>Нажимайте на вариант ответа</span> и переходите к
-                следующему вопросу
+          <div class="form-calc-price__left">
+            <h3>
+              Рассчитайте предварительную стоимость дома
+              <span>за 1 минуту</span>
+            </h3>
+            <div class="form-calc-price__left-container">
+              <!-- <input type="" /> -->
+              <div>
+                <span class="select-house">01.</span>
+                <span>Что будем строить?</span>
               </div>
-              <div class="orange_button">Далее >></div>
+              <figure>
+                <img src="img/houseSmall.png" alt="house small" />
+                <figcaption>Дом</figcaption>
+              </figure>
+              <figure>
+                <img src="img/bathhouse.png" alt="bathhouse" />
+                <figcaption>Баня</figcaption>
+              </figure>
+
+              <div>
+                <div class="hand">
+                  <img src="img/clickPoint.svg" alt="" />
+                  <img src="img/hand.svg" alt="" />
+                  <span>Нажимайте на вариант ответа</span> и переходите к
+                  следующему вопросу
+                </div>
+                <div class="orange_button">Далее >></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <img src="img/MihailIvanov.png" alt="" />
-          <h3 class="FIO">Михаил Иванов</h3>
-          <p class="profession">Ведущий архитектор</p>
-          <p class="question">Ответив на вопросы <b>вы получите:</b></p>
-          <div class="sale">
-            <img src="img/openLock.svg" alt="open lock" />Гарантированную
-            <b>скидку</b>
-          </div>
-          <div class="sale-white">
-            <img src="img/closedLock.svg" alt="close lock" /><b
-              >Ориентировочную</b
-            >
-            стоимость строительства
-          </div>
-          <div class="sale-white">
-            <img src="img/closedLock.svg" alt="close lock" /><b
-              >Точную подборку</b
-            >
-            проектов исходя изваших ответов
+          <div class="form-calc-price__right">
+            <div>
+              <img src="img/MihailIvanov.png" alt="" />
+              <h3 class="FIO">Михаил Иванов</h3>
+              <p class="profession">Ведущий архитектор</p>
+              <p class="question">Ответив на вопросы <b>вы получите:</b></p>
+              <div class="sale">
+                <img src="img/openLock.svg" alt="open lock" />Гарантированную
+                <b>скидку</b>
+              </div>
+              <div class="sale-white">
+                <img src="img/closedLock.svg" alt="close lock" /><b
+                  >Ориентировочную</b
+                >
+                стоимость строительства
+              </div>
+              <div class="sale-white">
+                <img src="img/closedLock.svg" alt="close lock" /><b
+                  >Точную подборку</b
+                >
+                проектов исходя изваших ответов
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -745,7 +751,10 @@
         </div>
       </section>
       <section class="promotion">
-        <h2 class="container__title"><span class="container__title_bold">Акции и подарки</span> для каждой семьи</h2>
+        <h2 class="container__title">
+          <span class="container__title_bold">Акции и подарки</span> для каждой
+          семьи
+        </h2>
         <div class="promotion__wrapper">
           <div class="promotion__card promotion__card_1">
             <h3 class="promotion__card-title">
@@ -760,9 +769,11 @@
             <div class="promotion__button">перейти к акции</div>
           </div>
           <div class="promotion__card promotion__card_2">
-            <h3 class="promotion__card-title">Металлическая <br />дверь в подарок!</h3>
+            <h3 class="promotion__card-title">
+              Металлическая <br />дверь в подарок!
+            </h3>
             <div class="promotion__card-description">
-               <b>Рыбатекст</b> используется дизайнерами,
+              <b>Рыбатекст</b> используется дизайнерами,
               <b>проектировщиками</b> и фронтендерами, когда нужно выстро
               заполнить <b>макеты</b> или прототипы содержимым.
             </div>
@@ -771,83 +782,113 @@
         </div>
       </section>
       <section class="housesLastYear">
-        <h2 class="container__title"><span class="container__title_bold"> Посмотрите </span>дома, построенные нами за прошлый год</h2>
+        <h2 class="container__title">
+          <span class="container__title_bold"> Посмотрите </span>дома,
+          построенные нами за прошлый год
+        </h2>
         <!-- <div class=""> -->
-          <div class="houseLastYear__left">
-            <img class="houseLastYear__bigImg" src="img/houseLastYear.png" alt="housesLastYear" />
-            <div class="houseLastYear__containerImg" >
-              <img class="houseLastYear__smallImg" src="img/houseLastYearSmall.png" alt="houseLastYearSmall" />
-              <img class="houseLastYear__smallImg"
-                src="img/houseLastYearSmallSel.png"
-                alt="houseLastYearSmallSel"
-              />
-              <img class="houseLastYear__smallImg" src="img/houseLastYearSmall.png" alt="houseLastYearSmall" />
-              <img  class="houseLastYear__smallImg houseLastYear__smallImg_mr0" src="img/houseLastYearSmall.png" alt="houseLastYearSmall" />
+        <div class="houseLastYear__left">
+          <img
+            class="houseLastYear__bigImg"
+            src="img/houseLastYear.png"
+            alt="housesLastYear"
+          />
+          <div class="houseLastYear__containerImg">
+            <img
+              class="houseLastYear__smallImg"
+              src="img/houseLastYearSmall.png"
+              alt="houseLastYearSmall"
+            />
+            <img
+              class="houseLastYear__smallImg"
+              src="img/houseLastYearSmallSel.png"
+              alt="houseLastYearSmallSel"
+            />
+            <img
+              class="houseLastYear__smallImg"
+              src="img/houseLastYearSmall.png"
+              alt="houseLastYearSmall"
+            />
+            <img
+              class="houseLastYear__smallImg houseLastYear__smallImg_mr0"
+              src="img/houseLastYearSmall.png"
+              alt="houseLastYearSmall"
+            />
+          </div>
+        </div>
+        <div class="houseLastYear__right">
+          <div class="houseLastYear-right__top">
+            <div class="houseLastYear__linkMap">
+              <i class="fa-solid fa-location-dot fa-location-dot_green"></i
+              >Показать на карте
+            </div>
+            <h3 class="houseLastYear__label">
+              Дом из сруба “Атаман” в Пестово
+            </h3>
+          </div>
+          <div class="houseLastYear__description">
+            <div class="houseLastYear__description_item">
+              <img src="img/clickPoint.svg" alt="click point" />
+              <div class="houseLastYear__description_small-text">
+                Стоимость строительства:
+              </div>
+              <span class="houseLastYear__description_digit">1 780 000</span>
+              <span class="houseLastYear__description_medium-text">руб</span>
+            </div>
+            <div class="houseLastYear__description_item">
+              <img src="img/clickPoint.svg" alt="click point" />
+              <div class="houseLastYear__description_small-text">
+                Сроки строительства:
+              </div>
+              <span class="houseLastYear__description_digit">35</span>
+              <span class="houseLastYear__description_medium-text">дней</span>
+            </div>
+            <div class="houseLastYear__description_item">
+              <img src="img/clickPoint.svg" alt="click point" />
+              <div class="houseLastYear__description_small-text">
+                Общая площадь:
+              </div>
+              <span class="houseLastYear__description_digit">120</span>
+              <span class="houseLastYear__description_medium-text">м.кв.</span>
             </div>
           </div>
-          <div class="houseLastYear__right">
-            <div class="houseLastYear-right__top">
-              <div class="houseLastYear__linkMap">
-                <i class="fa-solid fa-location-dot fa-location-dot_green"></i>Показать
-                на карте
-              </div>
-              <h3 class="houseLastYear__label" >Дом из сруба “Атаман” в Пестово</h3>
-            </div>
-            <div class="houseLastYear__description">
-              <div class="houseLastYear__description_item">
-                <img src="img/clickPoint.svg" alt="click point" />
-                <div class="houseLastYear__description_small-text">
-                  Стоимость строительства:
+          <div class="houseLastYear-right__middle">
+            <div class="houseLastYear-right-middle__container">
+              <div
+                class="houseLastYear-right-middle__container_col houseLastYear__description_middle-text"
+              >
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Площадь:</span>
+                  <span><b>120 кв.м.</b></span>
                 </div>
-                <span class="houseLastYear__description_digit">1 780 000</span>
-                <span class="houseLastYear__description_medium-text">руб</span>
-              </div>
-              <div class="houseLastYear__description_item">
-                <img src="img/clickPoint.svg" alt="click point" />
-                <div class="houseLastYear__description_small-text">Сроки строительства:</div>
-                <span class="houseLastYear__description_digit">35</span>
-                <span class="houseLastYear__description_medium-text">дней</span>
-              </div>
-              <div class="houseLastYear__description_item">
-                <img src="img/clickPoint.svg" alt="click point" />
-                <div class="houseLastYear__description_small-text">Общая площадь:</div>
-                <span class="houseLastYear__description_digit">120</span>
-                <span class="houseLastYear__description_medium-text">м.кв.</span>
-              </div>
-            </div>
-            <div class="houseLastYear-right__middle">
-              <div class="houseLastYear-right-middle__container">
-                <div class="houseLastYear-right-middle__container_col houseLastYear__description_middle-text">
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Площадь:</span>
-                    <span><b>120 кв.м.</b></span>
-                  </div>
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Размеры:</span>
-                    <span><b>7х9</b></span>
-                  </div>
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Тип работ:</span>
-                    <span><b>Под ключ</b></span>
-                  </div>
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Размеры:</span>
+                  <span><b>7х9</b></span>
                 </div>
-                <div class="houseLastYear-right-middle__container_col houseLastYear__description_middle-text">
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Срок стройки:</span>
-                    <span><b>16 дней</b></span>
-                  </div>
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Комнат:</span>
-                    <span><b>5</b></span>
-                  </div>
-                  <div class="houseLastYear__description_middle-text-item">
-                    <span>Фундамент:</span>
-                    <span><b>Монолитная плита</b></span>
-                  </div>
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Тип работ:</span>
+                  <span><b>Под ключ</b></span>
+                </div>
+              </div>
+              <div
+                class="houseLastYear-right-middle__container_col houseLastYear__description_middle-text"
+              >
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Срок стройки:</span>
+                  <span><b>16 дней</b></span>
+                </div>
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Комнат:</span>
+                  <span><b>5</b></span>
+                </div>
+                <div class="houseLastYear__description_middle-text-item">
+                  <span>Фундамент:</span>
+                  <span><b>Монолитная плита</b></span>
                 </div>
               </div>
             </div>
-         
+          </div>
+
           <div class="houseLastYear-right__button">
             <a class="houseLastYear-right__button_small-text">
               <b>Понравился дом?</b> Рассчитайте стоимость в калькуляторе
@@ -855,9 +896,8 @@
             <a class="houseLastYear-right__button_text">
               Рассчитать стоимость <i class="fa-solid fa-calculator"></i
             ></a>
-            </a> 
           </div>
-        <!-- </div> -->
+        </div>
       </section>
       <section class="excursion">
         <h2>
@@ -1137,52 +1177,53 @@
           <div><img src="img/map.png" alt="" /></div>
         </div>
       </section> -->
-       <section class="section map">
-      <acticle class="map__block map__block_left">
-        <h3 class="map__caption">Наши контакты</h3>
-        <div class="map__info">
-          <div class="map__text map__text_left">
-            <p class="map__text_big">
-              <i class="fa-solid fa-location-dot"></i>
-              г. Москва, улица Рубинштейна, 43
-            </p>
-            <p class="map__text_small">
-              <span class="map__dot"></span>Без выходных с 10:00 до 20:00
-            </p>
-            <a class="map__link map__link_phone" href="tel:+ 78000000000"
-              >+ 7 (800) 000-00-00</a
-            >
-            <a class="map__link map__link_dotted" href=""
-              >Заказать обратный звонок</a
-            >
-          </div>
-          <div class="map__text map__text_right">
-            <p class="map__text map__text_bold">
-              <span class="map__dot"></span>Пишите , мы онлайн
-            </p>
-            <div class="map__soc">
-              <a href="" class="map__btn map__btn_pic"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a href="" class="map__btn map__btn_pic map__btn_mail"
-                ><i class="fa-regular fa-envelope"></i
+      <section class="section map">
+        <acticle class="map__block map__block_left">
+          <h3 class="map__caption">Наши контакты</h3>
+          <div class="map__info">
+            <div class="map__text map__text_left">
+              <p class="map__text_big">
+                <i class="fa-solid fa-location-dot"></i>
+                г. Москва, улица Рубинштейна, 43
+              </p>
+              <p class="map__text_small">
+                <span class="map__dot"></span>Без выходных с 10:00 до 20:00
+              </p>
+              <a class="map__link map__link_phone" href="tel:+ 78000000000"
+                >+ 7 (800) 000-00-00</a
+              >
+              <a class="map__link map__link_dotted" href=""
+                >Заказать обратный звонок</a
+              >
+            </div>
+            <div class="map__text map__text_right">
+              <p class="map__text map__text_bold">
+                <span class="map__dot"></span>Пишите , мы онлайн
+              </p>
+              <div class="map__soc">
+                <a href="" class="map__btn map__btn_pic"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+                <a href="" class="map__btn map__btn_pic map__btn_mail"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </div>
+              <a href="" class="map__btn"
+                >Рассчитать стоимость<i class="fa-solid fa-calculator"></i
               ></a>
             </div>
-            <a href="" class="map__btn"
-              >Рассчитать стоимость<i class="fa-solid fa-calculator"></i
-            ></a>
           </div>
-        </div>
-      </acticle>
-      <acticle class="map__block map__block_right">
-        <h3 class="map__caption">Приезжайте к нам в офис</h3>
-        <iframe
-          class="map__frame"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A1afdf5e0604ca83dee7bacf939373089a7266e4ea00b343ea3c6a2d39412ab47&amp;source=constructor%22"
-          rel="nofollow"
-          frameborder="0"
-        ></iframe
-      ></acticle>        
+        </acticle>
+        <acticle class="map__block map__block_right">
+          <h3 class="map__caption">Приезжайте к нам в офис</h3>
+          <iframe
+            class="map__frame"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A1afdf5e0604ca83dee7bacf939373089a7266e4ea00b343ea3c6a2d39412ab47&amp;source=constructor%22"
+            rel="nofollow"
+            frameborder="0"
+          ></iframe
+        ></acticle>
+      </section>
     </main>
     <footer class="footer">
       <div>
