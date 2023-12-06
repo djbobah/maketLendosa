@@ -280,6 +280,21 @@ h3 span {
 .form-calc-price__houses-img {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.form-calc-price__circle-check {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 4px solid #fff;
+  background: #eff3f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  left: calc(50% - 17.5px);
 }
 
 .form-calc-price__houses-caption {
