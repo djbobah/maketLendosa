@@ -482,12 +482,13 @@ h3 span {
   background-color: $almost_white;
   border-radius: 4px;
   padding: 3px 5px;
+  cursor: pointer;
 }
 
-.menu-popular__item_selected {
-  color: white;
-  background-color: #73b918;
-}
+// .menu-popular__item_selected {
+//   color: white;
+//   background-color: #73b918;
+// }
 .menu-popular__link {
   color: #f7d047;
   text-decoration-style: dashed;
@@ -495,11 +496,12 @@ h3 span {
 
 .popularCards-container {
   font-size: 0;
-  width: calc(348px * 3 + 31px * 2);
+  // width: calc(348px * 3 + 31px * 2);
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 31px;
+  justify-content: space-between;
+  // gap: 31px;
 }
 // .popularCards-container__col {
 //   width: 348px;
@@ -514,6 +516,7 @@ h3 span {
 // }
 .porular__card {
   /* margin-bottom: 50px; */
+  width: 348px;
   font-size: 13px;
   color: #7a7d81;
   background-color: white;

@@ -500,11 +500,7 @@ h3 span {
   background-color: #efefef;
   border-radius: 4px;
   padding: 3px 5px;
-}
-
-.menu-popular__item_selected {
-  color: white;
-  background-color: #73b918;
+  cursor: pointer;
 }
 
 .menu-popular__link {
@@ -514,15 +510,15 @@ h3 span {
 
 .popularCards-container {
   font-size: 0;
-  width: 1106px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 31px;
+  justify-content: space-between;
 }
 
 .porular__card {
   /* margin-bottom: 50px; */
+  width: 348px;
   font-size: 13px;
   color: #7a7d81;
   background-color: white;

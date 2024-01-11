@@ -1,6 +1,5 @@
 const houses = [
   {
-    img: "",
     name: "Атаман",
     square: 108,
     constructionPeriod: 16,
@@ -8,14 +7,9 @@ const houses = [
     rooms: 5,
     type: "Каркасный",
     price: 1780000,
-    floors: 1,
-    withTheAttic: false,
-    withBasementFloor: false,
-    withGarage: false,
-    withPanoramicWindows: false,
+    values: [1],
   },
   {
-    img: "",
     name: "Атаман2",
     square: 110,
     constructionPeriod: 17,
@@ -23,14 +17,9 @@ const houses = [
     rooms: 6,
     type: "Каркасный",
     price: 1780001,
-    floors: 2,
-    withTheAttic: false,
-    withBasementFloor: true,
-    withGarage: true,
-    withPanoramicWindows: false,
+    values: [2, "withBasementFloor", "withGarage"],
   },
   {
-    img: "",
     name: "Атаман3",
     square: 112,
     constructionPeriod: 18,
@@ -38,14 +27,9 @@ const houses = [
     rooms: 5,
     type: "Каркасный",
     price: 1780002,
-    floors: 1,
-    withTheAttic: true,
-    withBasementFloor: false,
-    withGarage: false,
-    withPanoramicWindows: false,
+    values: [1, "withTheAttic"],
   },
   {
-    img: "",
     name: "Атаман4",
     square: 114,
     constructionPeriod: 19,
@@ -53,14 +37,9 @@ const houses = [
     rooms: 5,
     type: "Каркасный",
     price: 1780003,
-    floors: 2,
-    withTheAttic: false,
-    withBasementFloor: false,
-    withGarage: false,
-    withPanoramicWindows: false,
+    values: [2],
   },
   {
-    img: "",
     name: "Атаман5",
     square: 120,
     constructionPeriod: 20,
@@ -68,14 +47,10 @@ const houses = [
     rooms: 5,
     type: "Каркасный",
     price: 1780004,
+    values: [3],
     floors: 3,
-    withTheAttic: false,
-    withBasementFloor: false,
-    withGarage: false,
-    withPanoramicWindows: false,
   },
   {
-    img: "",
     name: "Атаман6",
     square: 130,
     constructionPeriod: 21,
@@ -83,22 +58,71 @@ const houses = [
     rooms: 5,
     type: "Каркасный",
     price: 1780005,
-    floors: 1,
-    withTheAttic: true,
-    withBasementFloor: true,
-    withGarage: true,
-    withPanoramicWindows: true,
+    values: [
+      1,
+      "withTheAttic",
+      "withBasementFloor",
+      "withGarage",
+      "withPanoramicWindows",
+    ],
   },
 ];
 const filterList = [
-  "Одноэтажный",
-  "С мансардой",
-  "Двухэтажный",
-  "С цокольным этажом",
-  "Трехэтажные",
-  "С панорамными окнами",
-  "С гаражом",
+  { name: "Одноэтажный", value: 1 },
+  { name: "С мансардой", value: "withTheAttic" },
+  { name: "Двухэтажный", value: 2 },
+  { name: "С цокольным этажом", value: "withBasementFloor" },
+  { name: "Трехэтажные", value: 3 },
+  { name: "С панорамными окнами", value: "withPanoramicWindows" },
+  { name: "С гаражом", value: "withGarage" },
 ];
+
+let selectedItems = [];
+let filteredHouses = [];
+const setActive = (e) => {
+  e.stopPropagation();
+  e.preventDefault();
+
+  let present = false;
+  selectedItems.map((item) => {
+    if (item.name === e.target.innerText) {
+      present = true;
+    }
+  });
+
+  if (!present) {
+    e.currentTarget.style.backgroundColor = "#73b918";
+    e.currentTarget.style.color = "white";
+    selectedItems.push({
+      name: e.target.innerText,
+      value: e.target.getAttribute("value"),
+    });
+  } else {
+    e.currentTarget.style.backgroundColor = "#efefef";
+    e.currentTarget.style.color = "#5c5f66";
+    selectedItems = selectedItems.filter(
+      (item) => item.name !== e.target.innerText
+    );
+  }
+
+  // console.log(e.target);
+  // console.log("selectedItems", selectedItems);
+  // console.log("filteredHouses", filteredHouses);
+};
+
+const viewAll = (e) => {
+  e.stopPropagation();
+  e.preventDefault();
+  selectedItems = [];
+
+  const allMenuItems = document.querySelectorAll(".menu-popular__item");
+  allMenuItems.forEach((item) => {
+    item.style.color = "#5c5f66";
+    item.style.backgroundColor = "#efefef";
+  });
+
+  // console.log(selectedItems);
+};
 
 const sectionPopular = document.querySelector(".container-popular");
 
@@ -119,8 +143,10 @@ filterMenu.append(arrowLeft);
 filterList.map((item) => {
   let filterItem = document.createElement("div");
   filterItem.className = "menu-popular__item";
-  filterItem.innerText = item;
+  filterItem.innerText = item.name;
+  filterItem.setAttribute("value", item.value);
   filterMenu.append(filterItem);
+  filterItem.addEventListener("click", setActive);
 });
 
 const arrowRight = document.createElement("img");
@@ -134,6 +160,7 @@ menuLink.className = "menu-popular__link";
 menuLink.href = "";
 menuLink.innerText = "Смотреть все";
 filterMenu.append(menuLink);
+menuLink.addEventListener("click", viewAll);
 
 sectionPopular.append(filterMenu);
 
