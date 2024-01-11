@@ -138,19 +138,22 @@ filterMenu.append(menuLink);
 sectionPopular.append(filterMenu);
 
 const cardsContainer = document.createElement("div");
-cardsContainer.className = "cards-container";
+cardsContainer.className = "popularCards-container";
 
 // возможно нужно добавить колонки
 
 houses.map((house) => {
   const popularCard = document.createElement("div");
   popularCard.className = "porular__card popular-card_bg";
+  // popularCard.classList.add("popular-card_bg");
+  // popularCard.classList
+
   const popularCardBody = document.createElement("div");
-  popularCardBody.className = "pporular-card__body";
+  popularCardBody.className = "porular-card__body";
 
   const popularCardTitle = document.createElement("h3");
   popularCardTitle.className = "porular-card__title";
-  popularCardTitle.innerText = house.name;
+  popularCardTitle.innerText = `"${house.name}"`;
   popularCardBody.append(popularCardTitle);
 
   const popularCardDescriptionCol = document.createElement("div");
@@ -191,7 +194,8 @@ houses.map((house) => {
   const popularCardDescriptionTextBold3 = document.createElement("span");
   popularCardDescriptionTextBold3.className =
     "popular-card-description__text_bold";
-  popularCardDescriptionTextBold3.innerText = house.constructionPeriod;
+  popularCardDescriptionTextBold3.innerText =
+    house.constructionPeriod + " дней";
   popularCardDescription3.append(popularCardDescriptionTextBold3);
 
   popularCardDescriptionCol2.append(popularCardDescription3);
@@ -204,58 +208,89 @@ houses.map((house) => {
   popularCardDescriptionTextBold4.className =
     "popular-card-description__text_bold";
   popularCardDescriptionTextBold4.innerText = house.rooms;
-  popularCardDescription4.append(popularCardDescriptionTextBold2);
+  popularCardDescription4.append(popularCardDescriptionTextBold4);
 
   popularCardDescriptionCol2.append(popularCardDescription4);
   popularCardBody.append(popularCardDescriptionCol2);
 
   const popularCardDescriptionList = document.createElement("ul");
   popularCardDescriptionList.className = "popular-card-description__list";
-  popularCardDescriptionList.innerHTML = "<li>dsfsf</li>";
+  // popularCardDescriptionList.innerHTML = "<li>Тид дома:</li>";
 
-  // const popularCardDescriptionListItem = document.createElement("li");
-  // popularCardDescriptionListItem.className =
-  //   "popular-card-description-list__item";
-  // popularCardDescriptionListItem.innerText = "Тип дома:";
-  // const popularCardDescriptionTextBoldRight = document.createElement("span");
-  // popularCardDescriptionTextBoldRight.innerText = house.type;
+  const popularCardDescriptionListItem = document.createElement("li");
+  popularCardDescriptionListItem.className =
+    "popular-card-description-list__item";
+  popularCardDescriptionListItem.innerText = "Тип дома: ";
+  const popularCardDescriptionTextBoldRight = document.createElement("span");
+  popularCardDescriptionTextBoldRight.className =
+    "popular-card-description__text_bold-right";
+  popularCardDescriptionTextBoldRight.innerText = house.type;
 
-  // popularCardDescriptionListItem.append(popularCardDescriptionTextBoldRight);
+  popularCardDescriptionListItem.append(popularCardDescriptionTextBoldRight);
+  popularCardDescriptionList.append(popularCardDescriptionListItem);
 
-  // popularCardDescriptionList.append(popularCardDescriptionListItem);
+  const popularCardDescriptionListItem2 = document.createElement("li");
+  popularCardDescriptionListItem2.className =
+    "popular-card-description-list__item";
+  const popularCardDescriptionListItemBigHeight = document.createElement("div");
+  popularCardDescriptionListItemBigHeight.className =
+    "popular-card-description-list__item_bigHeight";
 
-  // const popularCardDescriptionListItem2 = document.createElement("li");
-  // popularCardDescriptionListItem2.className =
-  //   "popular-card-description-list__item";
-  // const popularCardDescriptionListItemBigHeight = document.createElement("div");
-  // popularCardDescriptionListItemBigHeight.className =
-  //   "popular-card-description-list__item_bigHeight";
+  const popularCardDescriptionTextBottom = document.createElement("span");
+  popularCardDescriptionTextBottom.className =
+    "popular-card-description__text_bottom";
+  popularCardDescriptionTextBottom.innerText = "Стоимость:";
+  popularCardDescriptionListItemBigHeight.append(
+    popularCardDescriptionTextBottom
+  );
+  const popularCardDescriptionTextBoldRight2 = document.createElement("span");
+  popularCardDescriptionTextBoldRight2.className =
+    "popular-card-description__text_bold-right";
+  popularCardDescriptionTextBoldRight2.innerText = "от ";
 
-  // const popularCardDescriptionTextBottom = document.createElement("span");
-  // popularCardDescriptionTextBottom.className =
-  //   "popular-card-description__text_bottom";
-  // popularCardDescriptionTextBottom.innerText = "Стоимость:";
-  // popularCardDescriptionListItemBigHeight.append(
-  //   popularCardDescriptionTextBottom
-  // );
-  // const popularCardDescriptionTextBoldRight2 = document.createElement("span");
-  // popularCardDescriptionTextBoldRight2.className =
-  //   "popular-card-description__text_bold-right";
-  // // popularCardDescriptionTextBoldRight2.innerText = " ";
+  popularCardDescriptionTextBottom.append(popularCardDescriptionTextBoldRight2);
+
+  const popularCardDescriptionPrice = document.createElement("span");
+  popularCardDescriptionPrice.className = "popular-card-description__price";
+  popularCardDescriptionPrice.innerText = house.price;
+  popularCardDescriptionTextBoldRight2.append(popularCardDescriptionPrice);
+  popularCardDescriptionTextBoldRight2.append(" руб");
   // popularCardDescriptionTextBoldRight2.innerHTML +=
   //   "от" +
   //   ` \<span class=\"popular-card-description__price\" \>${house.price}\<\/span\> руб\<\/span\>`;
-  // popularCardDescriptionListItemBigHeight.append(
-  //   popularCardDescriptionTextBoldRight2
-  // );
+  popularCardDescriptionListItemBigHeight.append(
+    popularCardDescriptionTextBoldRight2
+  );
 
-  // popularCardDescriptionListItem2.append(
-  //   popularCardDescriptionListItemBigHeight
-  // );
+  popularCardDescriptionListItem2.append(
+    popularCardDescriptionListItemBigHeight
+  );
 
-  // popularCardDescriptionList.appendChild(popularCardDescriptionListItem2);
-
+  popularCardDescriptionList.appendChild(popularCardDescriptionListItem2);
   popularCardBody.append(popularCardDescriptionList);
+
+  const popularCardButtons = document.createElement("div");
+  popularCardButtons.className = "popular-card__buttons";
+
+  const orangeButton = document.createElement("div");
+  orangeButton.className = "orange_button upper-text";
+  orangeButton.innerText = "смотреть проекты";
+  popularCardButtons.append(orangeButton);
+  const popularCardPersonalPlan = document.createElement("div");
+  popularCardPersonalPlan.className = "popular-card__personal-plan";
+
+  const popularCardPersonalPlanImg = document.createElement("img");
+  popularCardPersonalPlanImg.className = "popular-card__personal-plan_img";
+  popularCardPersonalPlanImg.src = "img/checkSuccess2.svg";
+  popularCardPersonalPlan.append(popularCardPersonalPlanImg);
+
+  const popularCardPersonalPlanLink = document.createElement("a");
+  popularCardPersonalPlanLink.className = "popular-card__personal-plan_link";
+  popularCardPersonalPlanLink.text = "Индивидуальная планировка дома";
+  popularCardPersonalPlan.append(popularCardPersonalPlanLink);
+  popularCardButtons.append(popularCardPersonalPlan);
+
+  popularCardBody.append(popularCardButtons);
 
   popularCard.append(popularCardBody);
   cardsContainer.append(popularCard);

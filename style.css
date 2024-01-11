@@ -512,8 +512,18 @@ h3 span {
   text-decoration-style: dashed;
 }
 
+.popularCards-container {
+  font-size: 0;
+  width: 1106px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+
 .porular__card {
   /* margin-bottom: 50px; */
+  font-size: 13px;
   color: #7a7d81;
   background-color: white;
   border-radius: 13px;
