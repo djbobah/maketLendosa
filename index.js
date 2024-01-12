@@ -81,8 +81,9 @@ let selectedItems = [];
 let filteredHouses = houses;
 
 const setFilteredHouses = (item) => {
+  console.log(house.values.includes(item.value));
   filteredHouses = filteredHouses.filter((house) => {
-    house.values[0] > item.value || house.values.includes(item.value) !== -1;
+    house.values[0] > item.value || house.values.includes(item.value) != -1;
   });
 };
 
@@ -114,10 +115,12 @@ const setActive = (e) => {
   }
 
   selectedItems.map((item) => {
-    filteredHouses = filteredHouses.filter(
-      (house) =>
-        house.values[0] >= item.value || house.values.includes(item.value) == -1
-    );
+    filteredHouses = filteredHouses.filter((house) => {
+      // console.log(house.values.includes(item.value));
+      // return (
+      house.values[0] >= item.value || house.values.includes(item.value) != -1;
+      // );
+    });
   });
 
   // selectedItems.map((item) => setFilteredHouses(item));
