@@ -78,10 +78,18 @@ const filterList = [
 ];
 
 let selectedItems = [];
-let filteredHouses = [];
+let filteredHouses = houses;
+
+const setFilteredHouses = (item) => {
+  filteredHouses = filteredHouses.filter((house) => {
+    house.values[0] > item.value || house.values.includes(item.value) !== -1;
+  });
+};
+
 const setActive = (e) => {
-  e.stopPropagation();
-  e.preventDefault();
+  filteredHouses = houses;
+  // e.stopPropagation();
+  // e.preventDefault();
 
   let present = false;
   selectedItems.map((item) => {
@@ -105,9 +113,18 @@ const setActive = (e) => {
     );
   }
 
+  selectedItems.map((item) => {
+    filteredHouses = filteredHouses.filter(
+      (house) =>
+        house.values[0] >= item.value || house.values.includes(item.value) == -1
+    );
+  });
+
+  // selectedItems.map((item) => setFilteredHouses(item));
+
   // console.log(e.target);
   // console.log("selectedItems", selectedItems);
-  // console.log("filteredHouses", filteredHouses);
+  console.log("filteredHouses", filteredHouses);
 };
 
 const viewAll = (e) => {
@@ -169,7 +186,7 @@ cardsContainer.className = "popularCards-container";
 
 // возможно нужно добавить колонки
 
-houses.map((house) => {
+filteredHouses.map((house) => {
   const popularCard = document.createElement("div");
   popularCard.className = "porular__card popular-card_bg";
   // popularCard.classList.add("popular-card_bg");
