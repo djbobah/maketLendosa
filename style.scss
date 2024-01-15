@@ -211,7 +211,7 @@ h3 span {
   display: flex;
 }
 .form-calc-price__left {
-  padding: 80px 120px 40px 150px;
+  padding: 80px 120px 40px 100px;
 }
 .form-calc-price__left-container {
   background-color: bisque;
@@ -263,6 +263,10 @@ h3 span {
   align-items: center;
   bottom: 0px;
   left: calc(50% - 17.5px);
+  margin-bottom: 35px;
+}
+.form-calc-price__circle-check_active {
+  background-color: $ogange;
 }
 // .form-calc-price__check {
 //   color: red;
@@ -275,16 +279,20 @@ h3 span {
   // justify-content: center;
   // align-items: center;
   margin: 0 auto;
+  padding-top: 35px;
   // align-items: center;
 }
 
-// .hand {
-//   font-size: 10px;
-//   font-weight: 400;
-// }
-// .hand span {
-//   font-weight: bold;
-// }
+.form-calc-price__actions {
+  display: flex;
+}
+.form-calc-price__actions-hand {
+  font-size: 10px;
+  font-weight: 400;
+}
+.hand span {
+  font-weight: bold;
+}
 // .FIO {
 //   font-size: 26px;
 //   font-weight: 500;
