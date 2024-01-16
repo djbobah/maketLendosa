@@ -312,14 +312,30 @@ h3 span {
 
 .form-calc-price__actions {
   display: flex;
+  align-items: center;
 }
 
 .form-calc-price__actions-hand {
   font-size: 10px;
   font-weight: 400;
+  display: flex;
+  margin-left: 20px;
+  color: #777779;
 }
 
-.hand span {
+.form-calc-price__actions-hand :nth-child(1) {
+  width: 10px;
+}
+
+.form-calc-price__actions-hand :nth-child(2) {
+  width: 20px;
+}
+
+.form-calc-price__actions-hand-text {
+  width: 205px;
+}
+
+.form-calc-price__actions-hand span {
   font-weight: bold;
 }
 
